@@ -12,9 +12,15 @@ const Hero = () => {
        *  Link: https://ui.aceternity.com/components/spotlight
        */}
       <div>
-        <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white"  />
-        <Spotlight className="h-[80vh] w-[50vw] top-10 left-full" fill="purple" />
-        <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="green" />
+        <Spotlight
+          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
+          fill="white"
+        />
+        <Spotlight
+          className="h-[80vh] w-[50vw] top-10 left-full"
+          fill="purple"
+        />
+        <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
 
       {/**
@@ -45,17 +51,22 @@ const Hero = () => {
            *
            *  change md:text-6xl, add more responsive code
            */}
-        <TextGenerateEffect words="Transforming Ideas Into Reality With Technology" className="text-center text-[40px] md:text-5xl lg:text-6xl  text-blue-100" />
-
+          <TextGenerateEffect
+            words="Transforming Concepts into Seamless User Experiences"
+            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+          />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Usmana Zulfiqar The IT Engineer.
+            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
           </p>
 
           <a href="#about">
-            <MagicButton title="Show my work" icon={<FaLocationArrow />}position="right"/>
+            <MagicButton
+              title="Show my work"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
           </a>
-
         </div>
       </div>
     </div>
