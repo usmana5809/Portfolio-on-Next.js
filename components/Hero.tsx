@@ -12,14 +12,8 @@ const Hero = () => {
        *  Link: https://ui.aceternity.com/components/spotlight
        */}
       <div>
-        <Spotlight
-          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-          fill="white"
-        />
-        <Spotlight
-          className="h-[80vh] w-[50vw] top-10 left-full"
-          fill="purple"
-        />
+        <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white"/>
+        <Spotlight className="h-[80vh] w-[50vw] top-10 left-full" fill="purple"/>
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
 
@@ -52,13 +46,24 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            words="Always eager to explore new tools, tackle challenges, and grow as a developer."
+            className="text-center text-[32px] md:text-4xl lg:text-5xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
+          <p className="text-center md:tracking-wider mb-2 text-lg md:text-2xl lg:text-3xl font-bold">
+            Usmana Zulfiqar
           </p>
+          <p className="text-center md:tracking-wider mb-2 text-base md:text-lg lg:text-xl">
+            Application Developer | Lahore, Punjab, Pakistan
+          </p>
+          <p className="text-center md:tracking-wider mb-2 text-sm md:text-base lg:text-lg">
+            usmanazulfiqar20@gmail.com | 0331-4311640
+          </p>
+          <div className="flex justify-center gap-4 mb-4">
+            <a href="https://github.com/usmana5809" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/usmana-zulfiqar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="#">Portfolio</a>
+          </div>
 
           <a href="#about">
             <MagicButton

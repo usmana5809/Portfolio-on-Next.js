@@ -1,9 +1,12 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
+import { FaReact } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { BsBootstrap } from "react-icons/bs";
 
-import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import { projects } from "@/data";
 
 const RecentProjects = () => {
   return (
@@ -13,14 +16,14 @@ const RecentProjects = () => {
         <span className="text-purple">recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map((item) => (
+        {projects.map((item, idx) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-            key={item.id}
+            key={idx}
           >
             <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
+              title={item.title}
+              href={item.githubLink}
             >
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
@@ -30,10 +33,17 @@ const RecentProjects = () => {
                   <img src="/bg.png" alt="bgimg" />
                 </div>
                 <img
-                  src={item.img}
+                  src={item.image}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  className="z-10 absolute bottom-0 object-cover w-full h-full"
                 />
+              </div>
+
+              {/* Technology Icons Row */}
+              <div className="flex gap-3 mb-2">
+                <FaReact className="text-cyan-400 text-2xl" title="React" />
+                <SiTailwindcss className="text-sky-400 text-2xl" title="Tailwind CSS" />
+                <BsBootstrap className="text-purple-500 text-2xl" title="Bootstrap" />
               </div>
 
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
@@ -47,29 +57,21 @@ const RecentProjects = () => {
                   margin: "1vh 0",
                 }}
               >
-                {item.des}
+                {item.description}
               </p>
 
               <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
-                  {item.iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
-                    >
-                      <img src={icon} alt="icon5" className="p-2" />
-                    </div>
-                  ))}
-                </div>
-
+                <div />
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  <a
+                    href={item.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-purple hover:underline"
+                  >
+                    View Project
+                    <FaLocationArrow className="ms-1" color="#CBACF9" />
+                  </a>
                 </div>
               </div>
             </PinContainer>

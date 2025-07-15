@@ -1,6 +1,7 @@
 import { FaLocationArrow } from "react-icons/fa6";
 
-import { socialMedia } from "@/data";
+
+import { socialMedia, skills, education, certifications, volunteering } from "@/data";
 import MagicButton from "./MagicButton";
 
 const Footer = () => {
@@ -32,9 +33,12 @@ const Footer = () => {
           />
         </a>
       </div>
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Education and Volunteering sections removed as requested */}
+      </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Adrian Hajdin
+          Copyright © 2024 Usmana Zulfiqar
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
