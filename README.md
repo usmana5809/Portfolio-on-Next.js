@@ -130,6 +130,18 @@ import Image from 'next/image';
 
 ---
 
+## 🎨 Portfolio Pattern Images
+
+Below are the portfolio pattern images used in this project, displayed in a 3x3 grid:
+
+| 1 | 2 | 3 |
+|---|---|---|
+| ![1](/assests/1.png) | ![2](/assests/2.png) | ![3](/assests/3.png) |
+| ![4](/assests/4.png) | ![5](/assests/5.png) | ![6](/assests/6.png) |
+| ![7](/assests/7.png) | ![8](/assests/8.png) | ![9](/assests/9.png) |
+
+---
+
 ## <a name="snippets">🕸️ Snippets</a>
 
 <details>
